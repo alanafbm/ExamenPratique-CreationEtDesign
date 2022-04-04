@@ -1,0 +1,150 @@
+:root {
+    --ff-primaire: ‘Inter’, sans-serif;
+    --clr-bleu: #0b325d;
+    --clr-bleu-pale: #0b528d;
+    --clr-bleu-fonce: #0b3f6a;
+    --font-taille-petite: 13px;
+    --font-taille-courant: 14px;
+    --font-taille-grande: 16px;
+    --font-taille-tres-grande: 19px;
+    --interlignage: 1.5625em;
+    --espacement-tres-petit: 5px;
+    --espacement-petit: 10px;
+    --espacement-moyen: 15px;
+    --espacement-grand: 20px;
+    --espacement-tres-grand: 30px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--clr-bleu-fonce);
+    font-family: var(--ff-primaire);
+    color: var(--clr-bleu-fonce);
+    line-height: var(--interlignage);
+}
+h2 {
+    font-size: var(--font-taille-grande);
+    font-weight: 400;
+}
+h1 {
+    font-size: var(--font-taille-tres-grande);
+}
+h3 {
+    font-size: var(--font-taille-courant);
+    font-weight: 400;
+}
+h4 {
+    font-size: var(--font-taille-petite);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 550px;
+    max-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+}
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.paddingPetit {
+    padding: var(--espacement-petit);
+}
+
+/* Section Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--espacement-grand);
+}
+.imgRound {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--espacement-moyen);
+}
+
+/* Section Text */
+
+.text {
+    padding-right: var(--espacement-moyen);
+    padding-left: var(--espacement-petit);
+    line-height: 1.45;
+}
+.text h3 {
+    padding-left: var(--espacement-grand);
+    padding-right: var(--espacement-tres-grand);
+}
+
+/* Section Article */
+
+.article h1 {
+    font-size: var(--font-taille-grande);
+    font-weight: bold;
+}
+.article {
+    padding: 0 var(--espacement-tres-grand);
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-bottom: var(--espacement-moyen);
+    line-height: 1.45;
+}
+
+/* Section Icons */
+
+.iconText {
+    padding: 0 var(--espacement-moyen);
+        
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding: var(--espacement-petit);
+    align-items: baseline;
+}
+.iconText h4 {
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* Section Image Center */ 
+
+.imgHero img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 20px;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+/* Section Image/Input */
+
+section input[type=text] {
+    background-color: rgba(222, 222, 222, 0.689);
+    padding: var(--espacement-moyen);
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+}
+#placeholder-text::placeholder {
+    color: rgb(66, 65, 65);
+}
+.imgInput {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--espacement-petit);
+}
+
+
