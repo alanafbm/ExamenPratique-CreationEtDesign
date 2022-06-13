@@ -11,4 +11,4 @@
 _______________
 
 
-![alt text](./maquette.PNG)
+![alt text](./maquette.png)
